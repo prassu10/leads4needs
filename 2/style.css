@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', SansSerif;
+}
+
+body {
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background-color: #fff;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+}
+.container .left_Side {
+    position: relative;
+    background-color: #ffa600;
+    padding: 40px;
+}
+.profileText{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+}
+.profileText .imgBx {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #0044ff;
+    
+}
+.profileText .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 3px;
+    border-radius: 50%;
+}
+.photo {
+    width: 100%;
+    height: auto;
+}
+.profileText h2 {
+    color: #000;
+    font-size: 2rem;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+.profileText h2 span{
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+.contactInfo {
+    padding-top: 40px;
+}
+.title{
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.contactInfo.education ul {
+    position: relative;
+    margin-left: 1.25rem;
+}
+.education ul::before{
+    content: "";
+    display: inline-block;
+    width: 3px;
+    height: 100%;
+    background: #0044ff;
+    left: -1rem;
+    top: 6px;
+    position: absolute;
+}
+
+.education ul li::before{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: -1.25rem;
+    top:4px;
+    width: 7px;
+    height: 7px;
+    border: 2px solid #0044ff;
+    background: white;
+    border-radius: 50%;
+}
+
+.contactInfo ul li {
+    list-style: none;
+    position: relative;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.contactInfo ul li .icon {
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #0044ff;
+    padding: 2px;
+    background: #eee;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 1rem;
+}
+
+.contactInfo ul li span{
+    color: #000;
+    font-weight: 300;
+}
+.contactInfo.education li {
+    margin-bottom: 15px;
+}
+.contactInfo.education h5 {
+    color: #0044ff;
+    font-weight: 500;
+}
+.contactInfo.education h4:nth-child(2) {
+    color: #000;
+    font-weight: 500;
+}
+.contactInfo.education h4 {
+    color: #000;
+    font-weight: 300;
+}
+.contactInfo.language .percent {
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background-color: #081921;
+    display: block;
+    margin-top: 5px;
+}
+.contactInfo.language .percent div {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: linear-gradient(90deg, #0044ff 70%, #eee 70%);
+}
+.container .right_Side {
+    position: relative;
+    background-color: #fff;
+    padding: 40px;
+}
+.about {
+    margin-bottom: 50px;
+}
+.about:last-child {
+    margin-bottom: 0;
+}
+.title2 {
+    color: #003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+p {
+    color: #081921;
+}
+.dot{
+    height: 20px;
+    width: 20px;
+    background-color: #fff;
+    border:2px solid  #004eff;
+    margin-left: -2.675rem;
+    position: absolute;
+    border-radius: 50%;
+}
+.about .box {
+    display: flex;
+    flex-direction: row;
+    
+}
+.about .box .year_company {
+    min-width: 130px;
+    border-right: 2px solid #0044ff;
+    padding-bottom: 5rem;
+}
+.about .box .year_company h5 {
+    text-transform: uppercase;
+    color: #848c90;
+    font-weight: 600;
+}
+
+.about .box .text h4 {
+    text-transform: uppercase;
+    color: #0044ff;
+    font-size: 16px;
+}
+.skills .box {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills .box h4 {
+    text-transform: uppercase;
+    color: #848c90;
+    font-weight: 500;
+}
+.skills .box .percent {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: linear-gradient(90deg, #0044ff 60%, #eee 60%);;
+}
+.skills .box .percent div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #0044ff;
+}
+.interest ul {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.interest ul li {
+    list-style: none;
+    color: black;
+    font-weight: 500;
+    margin: 10px 0;
+}
+.interest ul li .fa {
+    color: #0044ff;
+    font-size: 18px;
+    width: 20px;
+}
+
+.exp .text{
+    margin-left: 2rem;
+}
+@media (max-width: 1000px) {
+    .container {
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .interest ul {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (max-width: 600px) {
+    .about .box{
+        flex-direction: column;
+    }
+    .about .box .year_company {
+        margin-bottom: 5px;
+    }
+    .interest ul {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .skills .box {
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .about.exp .box .text{
+        margin-left: 2rem;
+    }
+
+    .about.exp::after{
+        content: "";
+        display: inline-block;
+        width: 3px;
+        height: 100%;
+        background: #0044ff;
+        left: -1rem;
+        top: 6px;
+        position: absolute;
+    }
+}
+.englishw50 {
+    width: 60%;
+}
+.russianw90 {
+    width: 90%;
+}
+.frenchw30{
+    width: 30%;
+}
+.htmlws30 {
+    width: 50%;
+}
+.cssws45 {
+   width: 45%;
+}
+.jsws70 {
+    width: 70%;
+}
+.phws40{
+   width: 40%;
+}
+.ilws60 {
+   width: 60%;
+}
+.adw70 {
+    width: 70%;
+}
